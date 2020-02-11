@@ -91,19 +91,20 @@ body{
     display: flex;
   }
  .mv-box{
-   &:nth-child(2){
-     display: none;
-   }
-   &:nth-child(3){
-    display: none;
-  }
-
+   position: relative;
    max-width: 1180px;
    margin: auto;
    display: flex;
    justify-content: space-between;
    align-items: center;
    padding-top: 140px;
+   &:nth-child(2){
+    display: none;
+    
+  }
+  &:nth-child(3){
+   display: none;
+ }
    figure{
      max-width: 670px;
 
@@ -196,40 +197,51 @@ body{
 .tab{
   display: flex;
   line-height: 1.3636;
-  .tab-box:nth-child(1){
+  li{
+    font-size: 22px;
+    color: $color-main;
+    width: 200px;
+    text-align: center;
+    cursor: pointer;
+
+    &:hover{
+      opacity: 0.7;
+    }
+  }
+    li:nth-child(1){
     border-top: 2px solid $color-main;
     border-left: 2px solid $color-main;
    }
-   .tab-box:nth-child(2){
+     li:nth-child(2){
      border-top: 2px solid $color-main;
      border-left: 2px solid $color-main;
      border-right: 2px solid $color-main;
    }
-   .tab-box:nth-child(3){
+     li:nth-child(3){
      border-top: 2px solid $color-main;
      border-right: 2px solid $color-main;
    }
+   a{
+     display: inline-block;
+     width: 100%;
+     padding: 10px 0 12px 0;
+   }
 }
 .tab-box{
-  font-size: 22px;
-  color: $color-main;
-  padding: 10px 0 12px 0;
-  width: 200px;
-  text-align: center;
-  cursor: pointer;
-  text-decoration: none;
-  &:hover{
-    opacity: 0.7;
-  }
+    text-decoration: none;
 }
-.tab-open{
-  color: $white;
-  background-color: $color-main;
+a:-webkit-any-link {
+  color: unset;
 }
+
 .activities-inner{
   max-width: 980px;
   margin: auto;
   margin-top: 100px;
+  .tab-open{
+    color: $white;
+    background-color: $color-main;
+  }
 }
 .activities-tab{
   display: flex;
@@ -846,12 +858,15 @@ footer{
  .activities{
    padding: 0 15px;
  }
- .tab-box{
-   font-size: 18px;
-   width: 245.6px;
- }
+
  .activities-inner{
    margin-top: 50px;
+   .tab{
+      li{
+        font-size: 18px;
+        width: 245.6px;
+      }
+   }
  }
  .activities-tab{
    flex-direction: column;
