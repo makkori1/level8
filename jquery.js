@@ -31,7 +31,7 @@ $(function(){
  $('.activities-tab').hide();
  $($(this).attr("href")).show();
  $('.tab-open').removeClass('tab-open');
- $(this).addClass('tab-open');
+ $(this).parent().addClass('tab-open');
   return false;
 
 });
@@ -42,15 +42,15 @@ $(function(){
     if($answer.hasClass('open')){
       $answer.removeClass('open');
       $answer.hide(400);
-      $('.icon span:nth-child(2)').css('display', 'block');
-      $('.icon span:nth-child(1)').css('position', 'relative');
+      $(this).find('.icon span:nth-child(2)').css('display', 'block');
+      $(this).find('.icon span:nth-child(1)').css('position', 'relative');
 
 
     }else{
       $answer.addClass('open');
       $answer.show(400);
-      $('.icon span:nth-child(2)').css('display', 'none');
-      $('.icon span:nth-child(1)').css('position', 'static');
+      $(this).find('.icon span:nth-child(2)').css('display', 'none');
+      $(this).find('.icon span:nth-child(1)').css('position', 'static');
     }
   });
 
@@ -82,7 +82,6 @@ $(function(){
 
     //次へ進む（スクロール方向左）
     $('.next').click(function(){
-
       $('.member-ul').append($('.member-ul li:nth-child(1)'));
     });
 
