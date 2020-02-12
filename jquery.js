@@ -20,7 +20,18 @@ $(function(){
     $target -= 100;
     $('html, body').animate({scrollTop: $target}, 500);
 
+    return false;
+  });
 
+  $('.ham-menu a').click(function(){ 
+
+    $('.ham-menu').hide(500);
+    $('.header-inner').show();
+    $('body').css('overflow', 'initial');
+
+    $target= $($(this).attr('href')).offset().top;
+    $target -= 100;
+    $('html, body').animate({scrollTop: $target}, 500);
 
     return false;
   });
