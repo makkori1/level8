@@ -92,6 +92,7 @@
 
 .slick-next:before {
   content: "→";
+  display: none;
 }
 
 [dir="rtl"] .slick-next:before {
@@ -111,7 +112,7 @@
 
 .slick-dots {
   position: relative;
-  bottom: -138px;
+  bottom: -125px;
   list-style: none;
   display: block;
   text-align: center;
