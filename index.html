@@ -97,19 +97,19 @@
    <h2>About</h2>
  </div>
  <ul class="about-inner">
-  <li class="about-box slide-bottom"   data-plugin-options='{"speed":800}'>
+  <li class="about-box slide-bottom"   data-plugin-options='{"speed":800,"reverse": false}'>
     <figure>
       <img src="img/about1.png" alt="our job-image">
     </figure>
     <p>We will provide you the best solution for promotion that drives results.</p>
   </li>
-  <li class="about-box slide-bottom"   data-plugin-options='{"speed":800}'>
+  <li class="about-box slide-bottom"   data-plugin-options='{"speed":800 , "reverse":false}'>
     <figure>
       <img src="img/about2.png" alt="our job-image">
     </figure>
     <p>Our SEO consulting helps your business grow online leads, calls, and revenue.</p>
   </li>
-  <li class="about-box slide-bottom"  data-plugin-options='{"speed":800}'>
+  <li class="about-box slide-bottom"  data-plugin-options='{"speed":800, "reverse":false}'>
     <figure>
       <img src="img/about3.png" alt="our job-image">
     </figure>
@@ -195,6 +195,8 @@
       </ul>
   </div>
 </section>
+
+<section class="flow" id="flow">
   <div class="bg-box">
     <div  id="bg"></div>
      <div class="bg-padding">
@@ -211,7 +213,6 @@
       </div>
     </div>
   </div>
-<section class="flow" id="flow">
   <div class="title">
     <h2>Flow</h2>
   </div>
@@ -259,39 +260,42 @@
   <div class="title">
    <h2>Member</h2>
   </div>
-  <div class="member-inner">
-    <div class="member-button prev">
-      <span></span>
-      <span></span>
-    </div>
-    <ul class="member-ul">
-      <li class="member-box ">
+    <ul class="slider-member">
+      <li >
+        <div class="member-all">
+        <div class="member-box ">
         <figure>
           <img src="img/m-1.png" alt="Alex Khan">
         </figure>
           <p>CEO</p>
           <p>Alex Khan</p>
+        </div>
+      </div>
       </li>
-      <li class="member-box">
+      <li>
+        <div class="member-all">
+        <div class="member-box ">
         <figure>
           <img src="img/m-2.png" alt="Lori J. Tucker">
         </figure>
           <p>CDO</p>
           <p>Lori J. Tucker</p>
+        </div>
+      </div>
       </li>
-      <li class="member-box">
+      <li >
+        <div class="member-all">
+        <div class="member-box ">
         <figure>
           <img src="img/m-3.png" alt="John Doe">
         </figure>
           <p>CTO</p>
           <p>John Doe</p>
+        </div>
+      </div>
       </li>
     </ul>
-    <div class="member-button next">
-      <span></span>
-      <span></span>
-    </div>
-  </div>
+
 </section>
 <section class="question" id="question">
   <div class="title">
@@ -369,21 +373,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js"></script>
 <script src="jquery.fadethis.min.js"></script>
 <script type="text/javascript" src="slick/slick.min.js"></script>
-<script>
-  $('.slider').slick({
-    dots: true,
-  infinite: true,
-  autoplay:true,
-  autoplaySpeed: 5000,
-  speed: 1000,
-  slidesToShow: 1,
-  adaptiveHeight: true
-  
-});
-</script>
-
 <script src="jquery.js"></script>
-<script>$(window).fadeThis();</script>
 </body>
 </html>
 
