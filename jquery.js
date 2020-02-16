@@ -113,9 +113,15 @@ $(function(){
     //スライダー２
     $('.slider-member').slick({
       dots: false,
-      infinate: true,
       slidesToScroll: 1,
-    slidesToShow: 3,
-  });
- 
+      slidesToShow: 3,
+      infinite: true,
+   });
+   $('.slider-member-sp').slick({
+    dots: false,
+    slidesToScroll: 1,
+    slidesToShow: 1,
+    infinite: true,
+ });
+
 })
